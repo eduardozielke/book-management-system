@@ -1,1 +1,23 @@
-
+spring:
+  datasource:
+    username: user
+    password: main
+    url: jdbc:postgresql://localhost:2233/book-management
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: 'false'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+jwt:
+  secret: HXCYvNg48Hc2cp28MBdFWwRpQ2G7hX05KM2EvMAfjZUqTwrufntft4ML99COKLU
+  expiration: 12
+swagger:
+  server-url: http://localhost:5566
+server:
+  error:
+    include-stacktrace: on_param
+  servlet:
+    context-path: /book-management
+  port: '5566'
