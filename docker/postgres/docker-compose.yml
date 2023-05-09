@@ -1,0 +1,12 @@
+version: "3"
+services:
+  book_management_db:
+    image: postgres:15
+    container_name: book-management-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=book-management
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=main
+    ports:
+      - "2233:5432"
