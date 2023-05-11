@@ -25,7 +25,9 @@ dependencies {
 	implementation("org.mapstruct:mapstruct:1.5.5.Final")
 	annotationProcessor("org.mapstruct:mapstruct-processor:1.5.5.Final")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
-	implementation("org.springdoc:springdoc-openapi-ui:1.7.0")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0")
+//	implementation("org.springdoc:springdoc-openapi-ui:1.7.0")
+//	implementation("org.springdoc:springdoc-openapi-ui:1.6.13")
 }
 
 tasks.withType<Test> {
